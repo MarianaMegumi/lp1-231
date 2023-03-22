@@ -1,3 +1,4 @@
+package semana05.exercicios;
 import java.util.Scanner;
 
 public class Ex02 {
