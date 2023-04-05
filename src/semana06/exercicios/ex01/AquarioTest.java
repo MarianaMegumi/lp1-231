@@ -1,7 +1,11 @@
-package semana05.exercicios;
+package semana06.exercicios.ex01;
+import static org.junit.Assert.assertEquals;
 import java.util.Scanner;
 
-public class Ex01 {
+
+@Test
+public class AquarioTest {
+
     public static void main(String[] args) {
         Scanner sc1 = new Scanner(System.in);
         System.out.println("\n-------------------------------------------------------");
@@ -19,16 +23,30 @@ public class Ex01 {
         double temperaturaDesejada = sc1.nextDouble();
         sc1.close();
 
-        double volumeL = (comprimento * altura * largura)/1000;
-        double potenciaTermostato = volumeL * 0.5 * (temperaturaDesejada - temperaturaAmbiente);
-        double filtragem = volumeL * 2.5;
+        double volume = calcularVolume(comprimento, altura, largura);
+        double potenciaTermostato = calcularTermostrato (volume, temperaturaDesejada, temperaturaAmbiente);
+        double filtragem = calcularfiltragem(volume);
 
         System.out.println("\n-------------------------------------------------------");
-        System.out.println("Volume em litros: " + volumeL);
+        System.out.println("Volume em litros: " + volume);
         System.out.println("Potência do termostato necessária: " + potenciaTermostato);
         System.out.println("Quantidade em litros de filtragem por hora: " + filtragem);
         System.out.println("-------------------------------------------------------");
 
+    }
 
+    @Test
+    public static double calcularVolume (double comprimento, double altura, double largura) {
+        return (comprimento * altura * largura) / 1000;
+    }
+
+    @Test
+    public static double calcularTermostrato (double volume, double temperaturaDesejada, double temperaturaAmbiente) {
+        return volume * 0.5 * (temperaturaDesejada - temperaturaAmbiente);
+    }
+
+    @Test
+    public static double calcularfiltragem(double volume) {
+        return volume * 2.5;
     }
 }
