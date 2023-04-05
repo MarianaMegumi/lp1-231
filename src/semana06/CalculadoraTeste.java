@@ -1,11 +1,22 @@
 package semana06;
 
+<<<<<<< HEAD
 import static org.junit.Assert.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class CalculadoraTeste {
     
+=======
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+
+public class CalculadoraTeste {
+    
+    @Test
+>>>>>>> d49dd0306f4dd487ff09df9b004a1a3ea742f715
     public void somaDoisNumerosPositivos(){
         // AAA
         // Arrange
