@@ -1,0 +1,105 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Introducao",
+            "request": "launch",
+            "mainClass": "semana03.Introducao",
+            "projectName": "lp1-231_8d2b54e3"
+        },
+        {
+            "type": "java",
+            "name": "EstruturasControle",
+            "request": "launch",
+            "mainClass": "semana04.EstruturasControle",
+            "projectName": "lp1-231_8d2b54e3"
+        },
+        {
+            "type": "java",
+            "name": "Ex1",
+            "request": "launch",
+            "mainClass": "semana04.exercicios.Ex1",
+            "projectName": "lp1-231_8d2b54e3"
+        },
+        {
+            "type": "java",
+            "name": "Ex2",
+            "request": "launch",
+            "mainClass": "semana04.exercicios.Ex2",
+            "projectName": "lp1-231_8d2b54e3"
+        },
+        {
+            "type": "java",
+            "name": "Ex3",
+            "request": "launch",
+            "mainClass": "semana04.exercicios.Ex3",
+            "projectName": "lp1-231_8d2b54e3"
+        },
+        {
+            "type": "java",
+            "name": "Ex4",
+            "request": "launch",
+            "mainClass": "semana04.exercicios.Ex4",
+            "projectName": "lp1-231_8d2b54e3"
+        },
+        {
+            "type": "java",
+            "name": "Ex01",
+            "request": "launch",
+            "mainClass": "semana05.exercicios.Ex01",
+            "projectName": "lp1-231_8d2b54e3"
+        },
+        {
+            "type": "java",
+            "name": "Ex02",
+            "request": "launch",
+            "mainClass": "semana05.exercicios.Ex02",
+            "projectName": "lp1-231_8d2b54e3"
+        },
+        {
+            "type": "java",
+            "name": "Metodos",
+            "request": "launch",
+            "mainClass": "semana06.Metodos",
+            "projectName": "lp1-231_8d2b54e3"
+        },
+        {
+            "type": "java",
+            "name": "Aquario",
+            "request": "launch",
+            "mainClass": "semana06.exercicios.ex01.Aquario",
+            "projectName": "lp1-231_8d2b54e3"
+        },
+        {
+            "type": "java",
+            "name": "AquarioTest",
+            "request": "launch",
+            "mainClass": "semana06.exercicios.ex01.AquarioTest",
+            "projectName": "lp1-231_8d2b54e3"
+        },
+        {
+            "type": "java",
+            "name": "Imc$Ex02",
+            "request": "launch",
+            "mainClass": "semana06.exercicios.ex02.Imc$Ex02",
+            "projectName": "lp1-231_8d2b54e3"
+        },
+        {
+            "type": "java",
+            "name": "ImcTest$Ex02",
+            "request": "launch",
+            "mainClass": "semana06.exercicios.ex02.ImcTest$Ex02",
+            "projectName": "lp1-231_8d2b54e3"
+        }
+    ]
+}
