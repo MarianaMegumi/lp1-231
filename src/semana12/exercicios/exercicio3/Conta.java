@@ -11,8 +11,8 @@ public class Conta {
     }
 
     public double sacar(double valor){
-        if (saldo < 0)
-            return 0.0;
+        if (saldo <= 0.0)
+            return saldo;
         else
             return this.saldo - valor; 
     }
@@ -21,9 +21,9 @@ public class Conta {
         return this.saldo + valor;
     }
 
-    public String transferir(double valor, String contaTransferir){
+    public double transferir(double valor){
         if (saldo < 0)
-        return 0.0;
+        return (0.0);
         else
         return (this.saldo - valor); 
     }

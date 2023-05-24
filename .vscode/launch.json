@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Banco",
+            "request": "launch",
+            "mainClass": "semana12.exercicios.exercicio3.Banco",
+            "projectName": "lp1-231_f162e43e"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
