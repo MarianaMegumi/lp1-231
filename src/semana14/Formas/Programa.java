@@ -1,4 +1,4 @@
-package semana14;
+package semana14.Formas;
 
 public class Programa {
     public static void main(String[] args) {
