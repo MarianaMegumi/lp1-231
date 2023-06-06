@@ -1,0 +1,14 @@
+Não preciso validar nada. Posso alterar os valores dos atributos do objeto após ele criado.
+- atributo publico
+- sem get
+- sem set
+
+Não preciso validar nada. Não posso alterar os valores dos atributos do objeto após ele criado.
+- atributo private
+- com get
+- sem set
+
+Preciso validar valores. Não posso alterar os valores dos atributos do objeto após ele ser criado.
+- atributo private
+- com get
+- com set e validação
