@@ -15,34 +15,36 @@ public class Banco{
 
         switch (operacao) {
             case 1:
-                if (Conta.sacar(valor) <= 0.0)
+                if (Conta.sacar(0.0) <= 0.0)
                     System.out.println("Não há valor a ser sacado.");
                 else {
                     System.out.println("Insira o valor a ser sacado: ");
-                    double valor = scanner.nextDouble();
-                    double saldoAtual = Conta.sacar(valor);
-                    System.out.println("Saldo atual: " + saldoAtual);
+                    double valorSacar = scanner.nextDouble();
+                    double saldoAtualS = Conta.sacar(valorSacar);
+                    System.out.println("Saldo atual: " + saldoAtualS);
                 }
                 break;  
             case 2:
                 System.out.println("Insira o valor a ser depositado: ");
-                double valor = scanner.nextDouble();
-                double saldoAtual = Conta.depositar(valor);
-                System.out.println("Saldo atual: " + saldoAtual);
+                double valorDepositar = scanner.nextDouble();
+                double saldoAtualD = Conta.depositar(valorDepositar);
+                System.out.println("Saldo atual: " + saldoAtualD);
                 break;
             case 3:
-                if (Conta.transferir(valor) <= 0.0)
+                if (Conta.transferir(0.0) <= 0.0)
                     System.out.println("Não há valor a ser transferido");
                 else {
                     System.out.println("Insira a conta a ser transferida o valor: ");
                     String usuarioTranferido = scanner.nextLine();
                     System.out.println("Insira o valor a ser tranferido: ");
-                    double valor = scanner.nextDouble();
-                    double saldoAtual = Conta.sacar(valor);
-                    System.out.println("Valor " + valor + " transferido para " + usuarioTranferido + "\nSaldo atual: " + saldoAtual);
-        }
-        break;
-                
+                    double valorTransferir = scanner.nextDouble();
+                    double saldoAtualT = Conta.sacar(valorTransferir);
+                    System.out.println("Valor " + valor + " transferido para " + usuarioTranferido + "\nSaldo atual: " + saldoAtualT);
+                }
+                break;
+            default:
+                System.out.println("Insira uma operação válida.");
+                break;        
         }
     }
 }
